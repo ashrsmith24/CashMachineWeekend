@@ -14,13 +14,20 @@ public class Bank {
 
     public Bank() {
         accounts.put(1000, new BasicAccount(new AccountData(
-                1000, "Example 1", "example1@gmail.com", 500
+                1000, "Janae", "janaebryant@gmail.com", 2000
+        )));
+        accounts.put(4000, new BasicAccount(new AccountData(
+                4000, "Ajah", "ajahdailey@gmail.com", 5000
         )));
 
         accounts.put(2000, new PremiumAccount(new AccountData(
-                2000, "Example 2", "example2@gmail.com", 200
+                2000, "Ashley", "cashash2@gmail.com", 2000000
+        )));
+        accounts.put(3000, new PremiumAccount(new AccountData(
+                3000, "Wendy", "wen.dailey@gmail.com", 10000
         )));
     }
+
 
     public ActionResult<AccountData> getAccountById(int id) {
         Account account = accounts.get(id);
